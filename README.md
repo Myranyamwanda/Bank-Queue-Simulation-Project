@@ -1,4 +1,4 @@
-\# Bank Queue Simulation
+# Bank Queue Simulation
 
 
 
@@ -6,9 +6,9 @@ A single-server queue simulation for a bank, built for a Computer Simulation
 
 and Modelling assignment. Inter-arrival times are drawn from a uniform
 
-distribution on \*\*(1, 8) minutes\*\* and service times from a uniform
+distribution on **(1, 8) minutes** and service times from a uniform
 
-distribution on \*\*(1, 6) minutes\*\*. The program generates the requested
+distribution on **(1, 6) minutes**. The program generates the requested
 
 sample of customers (100), derives the standard queueing
 
@@ -16,17 +16,17 @@ statistics, and presents everything through two interactive windows.
 
 
 
-\## Features
+## Features
 
 
 
-\- \*\*Input window\*\* – set the number of customers and the bounds of both
+- **Input window** – set the number of customers and the bounds of both
 
 &#x20; uniform distributions, then run the simulation. Stays open so you can
 
 &#x20; re-run with different parameters.
 
-\- \*\*Output window\*\* – a sortable table of every customer's inter-arrival
+- **Output window** – a sortable table of every customer's inter-arrival
 
 &#x20; time, arrival time, service time, service start/end, waiting time, time
 
@@ -48,31 +48,31 @@ statistics, and presents everything through two interactive windows.
 
 
 
-\## Files
+## Files
 
 
 
-\- `Customer.java` – per-customer data holder
+- `Customer.java` – per-customer data holder
 
-\- `QueueProcess.java` – simulation engine (random variate generation, queue logic)
+- `QueueProcess.java` – simulation engine (random variate generation, queue logic)
 
-\- `SimulationStatistics.java` – aggregates the summary statistics
+- `SimulationStatistics.java` – aggregates the summary statistics
 
-\- `InputWindow.java` –  input window
+- `InputWindow.java` –  input window
 
-\- `OutputWindow.java` –  output window
+- `OutputWindow.java` –  output window
 
-\- `BankSimulation.java` – main() entry point
+- `BankSimulation.java` – main() entry point
 
 
 
-\## Build and run
+## Build and run
 
 
 
 ```bash
 
-javac \*.java
+javac *.java
 
 java BankSimulation
 
@@ -80,7 +80,7 @@ java BankSimulation
 
 
 
-\## Design notes
+## Design notes
 
 
 
@@ -94,7 +94,7 @@ customer's service ending and this customer's service starting.
 
 
 
-\*\*Known limitation:\*\* queue/system counts are recomputed by re-scanning the
+**Known limitation:** queue/system counts are recomputed by re-scanning the
 
 full customer list for every new arrival (O(n²) overall). Fine for n = 100,
 
